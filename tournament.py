@@ -6,5 +6,7 @@ results = tournament.play()
 # Output the rankings
 print("Tournament Results Rankings:")
 print("=" * 40)
-for i, (player, score) in enumerate(results.ranking):
-    print(f"{i+1}. {player}: {score:.3f}")
+for rank, player_index in enumerate(results.ranking):
+    player = players[player_index]
+    score = results.normalised_scores[player_index]
+    print(f"{rank+1}. {player}: {score[0]:.3f}")

@@ -1,0 +1,3 @@
+axelrod>=4.0.0
+numpy>=1.19.0
+matplotlib>=3.0.0
